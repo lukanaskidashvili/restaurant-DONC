@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+html {
+  height: 100%;
+  overflow: hidden;
+  margin: 3;
+}
+body {
+
+  background-image  : url(https://www.gannett-cdn.com/-mm-/131199042c3b0c245b4db7f8d485c1c1992d75b2/c=0-123-1982-1238/local/-/media/2015/06/10/Salem/B9317639399Z.1_20150610111029_000_GL9B0OOR1.1-0.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp)  ;
+  height: 100vh;
+  display: block;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: cover;
+  z-index: -1;
+  min-height: 100vh;
+  color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  transform-origin: center;
+  transform: translateZ(-70px) scale(1);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 .5rem;
+  color: #333;
+
+}
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 5vw 0 0vw;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+}
+header h1 {
+  position: relative;
+  bottom: 260px;
+  margin-top: -100px;
+}
+
+header * {
+  font-weight: 400px;
+  font-size: 90px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+header p {
+  position: relative;
+  bottom: 310px;
+  font-size: 60px;
+  font-family: "Rancho", cursive;
+}
+nav {
+  position: relative;
+  bottom: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1px;
+  padding-left: 2%;
+  padding-right: 9%;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  font-size: 20px;
+  color: rgb(238, 239, 240);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: brown;
+  transition: 0.5s;
+}
+button {
+  border: none;
+  background: #cd0b0b;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.9);
+  cursor: pointer;
+}
+body {
+  font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fb7201bf;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(3, 22, 37, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 50% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.44rem;
+  font-weight: normal;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.728rem;
+  line-height: 0;
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}/*# sourceMappingURL=style.css.map */
+
+/* footer */
+.footer-distributed{
+	background: #50495000;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #f7cc91;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #fc9300;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #f87604;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #e7c369;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #ae9746;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #fffdfb;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgb(255, 134, 4);
+	border: none;
+	resize: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+  border: none;
+	border-radius: 3px;
+	background-color:  #6e4c03;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
